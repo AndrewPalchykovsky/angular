@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #fcac19;
+}
+
+.navbar a {
+  color: white
+}
+
+.navbar-brand {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.navbar li a {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 0.01em;
+}
