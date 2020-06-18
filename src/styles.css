@@ -5,6 +5,12 @@ body {
   overflow-x: hidden;
 }
 
+
+::selection {
+  background-color: #fcac19;
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
