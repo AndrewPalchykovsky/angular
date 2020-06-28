@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col">
-        <img src="" alt="" class="img-responsive">
+        <img [src]="recipe.imagePath" alt="" class="img-responsive recipe-detail__img">
     </div>
 </div>
 <div class="row">
     <div class="col">
-        <h3>Имя рецепта</h3>
+        <h3>{{recipe.name}}</h3>
     </div>
 </div>
 <div class="row">
@@ -22,11 +22,16 @@
 </div>
 <div class="row">
     <div class="col">
-        <h4>Описание</h4>
+        <h4>Описание: {{recipe.desc}}</h4>
     </div>
 </div>
 <div class="row">
     <div class="col">
-        <h4>Ингридиенты</h4>
+        <h4>Цена: ${{recipe.price}}</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <h4>Ингредиенты</h4>
     </div>
 </div>
