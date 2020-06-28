@@ -1,6 +1,6 @@
 body {
   min-width: 320px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -14,7 +14,13 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  font-family: 'Archivo Black', sans-serif;
+h4,
+h5 {
+  font-family: 'Monserrat', sans-serif;
+  letter-spacing: 0.02em
+}
+
+.mons {
+  font-family: 'Monserrat', sans-serif;
   letter-spacing: 0.02em
 }

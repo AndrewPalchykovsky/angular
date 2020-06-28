@@ -1,10 +1,6 @@
-export class Recipe {
+export interface Recipe {
     name: string;
-    description: string;
+    desc: string;
+    price: number;
     imagePath: string;
-    constructor(name: string, desc: string, imagePath: string) {
-        this.name = name;
-        this.description = desc;
-        this.imagePath = imagePath;
-    }
 }
