@@ -11,15 +11,14 @@
                 <li class="nav-item"><a class="nav-link font-weight-bold" (click)="onSelect('recipe')">Рецепты</a></li>
                 <li class="nav-item"><a class="nav-link font-weight-bold"
                         (click)="onSelect('shopping-list')">Корзина</a></li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" appDropdown #r="appDropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Настроить
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" [ngClass]="{'show':r.isOpen}">
+                        <a class="dropdown-item" href="#">Сохранить</a>
+                        <a class="dropdown-item" href="#">Получить</a>
                     </div>
                 </li>
             </ul>

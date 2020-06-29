@@ -21,9 +21,12 @@
 </div>
 <div class="row">
     <div class="col">
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle">Редактировать Рецепт</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown" appDropdown #r="appDropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Редактировать Рецепт
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" [ngClass]="{'show':r.isOpen}">
                 <a class="dropdown-item" href="#">Добавить в корзину</a>
                 <a class="dropdown-item" href="#">Редактировать</a>
                 <a class="dropdown-item" href="#">Удалить</a>
