@@ -37,7 +37,7 @@ export class RecipeService {
 
   ];
 
-  getRecepis() {
+  getRecipes() {
     return this.recipes.slice();
   }
 

@@ -1,3 +1,18 @@
 .list-group {
   cursor: pointer;
 }
+
+.active {
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 22%);
+  background-color: #fcab1a;
+}
+
+.active .list-group-item__header,
+.active .list-group-item__subheader,
+.active .list-group-item__description {
+  color: white;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
