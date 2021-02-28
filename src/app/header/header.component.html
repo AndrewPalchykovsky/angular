@@ -1,29 +1,28 @@
 <nav class="navbar navbar-dark navbar-expand-lg sticky-top navbar-light ">
-    <div class="container">
-        <a class="navbar-brand" href="#">Pizzarino</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  <div class="container">
+    <a class="navbar-brand" href="#">Pizzarino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link font-weight-bold" (click)="onSelect('recipe')">Рецепты</a></li>
-                <li class="nav-item"><a class="nav-link font-weight-bold"
-                        (click)="onSelect('shopping-list')">Корзина</a></li>
-                <li class="nav-item dropdown" appDropdown #r="appDropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Настроить
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" [ngClass]="{'show':r.isOpen}">
-                        <a class="dropdown-item" href="#">Сохранить</a>
-                        <a class="dropdown-item" href="#">Получить</a>
-                    </div>
-                </li>
-            </ul>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link font-weight-bold" routerLink="/recipes">Рецепты</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link font-weight-bold" routerLink="/shopping-list">Корзина</a></li>
+        <li class="nav-item dropdown" appDropdown #r="appDropdown">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Настроить
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" [ngClass]="{'show':r.isOpen}">
+            <a class="dropdown-item">Сохранить</a>
+            <a class="dropdown-item">Получить</a>
+          </div>
+        </li>
+      </ul>
 
-        </div>
     </div>
+  </div>
 
 </nav>

@@ -1,14 +1,12 @@
 <a (click)="selectRecipe()">
-    <div class="list-group">
-        <div class="list-group-item list-group-item-action flex-column align-items-center mt-2 ">
-            <img [src]=" recipe.imagePath" alt="" class="img-responsive w-100">
-            <div class="d-flex w-100 justify-content-between mt-3">
-                <h5 class="mb-1 font-weight-bold mons">{{recipe.name}}</h5>
-                <h5><b class="mons">${{recipe.price}}</b></h5>
-            </div>
-            <p class="mb-1">{{recipe.desc}}
-            </p>
-        </div>
+  <div class="list-group">
+    <div class="list-group-item list-group-item-action flex-column align-items-center mt-2 ">
+      <img [src]=" recipe.imagePath" alt="" class="img-responsive w-100">
+      <div class="d-flex w-100 justify-content-between mt-3">
+        <h5 class="mb-1 font-weight-bold mons">{{recipe.name}}</h5>
+        <h5><b class="mons">${{recipe.price}}</b></h5>
+      </div>
+      <p class="mb-1">{{recipe.desc}}</p>
     </div>
-
+  </div>
 </a>
