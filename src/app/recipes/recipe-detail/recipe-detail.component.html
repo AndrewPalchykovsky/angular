@@ -31,7 +31,7 @@
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" [ngClass]="{'show':r.isOpen}">
         <button class="dropdown-item" (click)="addToSl()">Добавить в корзину</button>
-        <a class="dropdown-item">Редактировать</a>
+        <a class="dropdown-item" (click)="onEdit()">Редактировать</a>
         <a class="dropdown-item">Удалить</a>
       </div>
     </div>
